@@ -9,45 +9,88 @@
 
 <body>
     <div class="header">
+        <img src="headshot-on-resume-scaled.jpg" alt="Headshot for Resume"
+        height="320"
+  width="420">
         <h1>My Resume</h1>
     </div>
-    <div class="row">
-        <div class="side">Student</div>
-        <div class="main">Work experience </div>
-    </div>
+    <button class="accordion">About Me</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Education</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Work experience</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
 </body>
 <style>
     .header {
+        display:flex;
+        align-items: center;
         padding: 80px;
         text-align: center;
         background: #4287f5;
         color: black;
+        gap: 40px;
     }
     
     .header h1 {
         font-size: 40px;
+        margin-left: 40px;
     }
     
     * {
         box-sizing: border-box;
     }
     
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .side {
-        flex: 30%;
-        background-color: #f1f1f1;
-        padding: 20px;
-    }
-    
-    .main {
-        flex: 70%;
-        background-color: white;
-        padding: 20px;
-    }
+    /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
 </style>
 
 </html>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
