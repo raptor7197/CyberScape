@@ -1,6 +1,7 @@
 # CyberScape
 Web Dev Task
 CyberScape Portfolio Website
+
 Welcome to the CyberScape Portfolio Website! This project showcases a personal portfolio and resume for a marketing professional. The website is designed to present information about the individual’s background, education, work experience, and skills in an engaging and accessible format.
 
 Table of Contents
@@ -22,10 +23,6 @@ CyberScape/
 │   ├── main.html          # Resume page
 │   ├── styles.css         # CSS styles for the website
 │   └── script.js          # JavaScript for interactivity
-Features
-Responsive Design: The website is designed to be mobile-friendly and adapts to different screen sizes.
-Accordion Panels: Information about the user is displayed in collapsible panels for a clean and organized layout.
-Interactive Elements: JavaScript is used to enhance user interaction, such as expanding and collapsing sections.
 
 Technologies Used
 HTML5
@@ -35,17 +32,11 @@ Responsive Web Design
 Installation
 
     
-git clone https://github.com/yourusername/CyberScape.git
-Navigate to the project directory:
-
 Open the Main.1.html or main.html file in your web browser to view the portfolio.
 
 Usage
 Click on the "About Me", "Education", and "Work Experience" buttons to expand and view more information.
 The website includes images and styled sections to enhance visual appeal.
-Contributing
-Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
 
